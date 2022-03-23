@@ -1,29 +1,414 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
 	<head>
+		<meta charset="utf-8">
 		<title>Judy Gibson</title>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<meta name="description" content="Responsive HTML5 Template">
+		<meta name="author" content="webthemez">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+ 
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet"> 
+		<link href="css/custom.css" rel="stylesheet">
 	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Judy Gibson!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
+
+	<body class="no-trans">
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+
+		<!-- header start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- header-left start --> 
+						<div class="header-left">
+
+							<!-- logo -->
+							<!-- <div class="logo smooth-scroll">
+								<a href="#banner"><img id="logo" src="images/logo.png" alt="Worthy"></a>
+							</div> -->
+
+							<!-- name-and-slogan -->
+							<div class="logo-section smooth-scroll">
+								<div class="brand"><a href="#banner">Judy Gibson</a></div>								
+							</div>
+
+						</div>
+						<!-- header-left end -->
+
+					</div>
+					<div class="col-md-8">
+
+						<!-- header-right start --> 
+						<div class="header-right">
+
+							<!-- main-navigation start --> 
+							<div class="main-navigation animated">
+
+								<!-- navbar start --> 
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
+
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
+
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="#banner">Home</a></li>
+												<li><a href="#portfolio">Portfolio</a></li>
+												<li><a href="#contact">Contact</a></li>
+											</ul>
+										</div>
+
+									</div>
+								</nav>
+								<!-- navbar end -->
+
+							</div>
+							<!-- main-navigation end -->
+
+						</div>
+						<!-- header-right end -->
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+
+		<!-- banner start --> 
+		<div id="banner" class="banner">
+			<div class="banner-image"></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">					 
+						<div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
+								<h1>Software Developer</h1>
+								<h3 class="padding-top30">React, JSX, Bootstrap, Axios<br>Python, tkinter</h3>
+								<!-- <div class="padding-top60 contact-form">
+									<button class="btn cta-button">CLICK HERE</button>
+								</div> -->
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- banner end -->
+ 
+		<!-- section start --> 
+		<section class="section secPadding">
+			<div class="container">
+				<h1 class="text-center title" id="portfolio">Portfolio</h1>
+				<div class="separator"></div>
+				<p class="lead text-center">Since returning to software development, I have been exploring React with JSX, APIs, and Python.</p>
+				<br>			
+				<div class="row no-view" data-animation-effect="fadeIn">
+					<div class="col-md-12">
+
+						<!-- isotope filters start -->
+						<div class="filters text-center">
+							<ul class="nav nav-pills">
+								<li class="active"><a href="#" data-filter="*">All</a></li>
+								<li><a href="#" data-filter=".python">Python</a></li>
+								<li><a href="#" data-filter=".react">React</a></li>
+								<li><a href="#" data-filter=".api">APIs</a></li>
+							</ul>
+						</div>
+						<!-- isotope filters end -->
+
+						<!-- portfolio items start -->
+						
+						<!-- Wordle Project -->
+						<div class="isotope-container row grid-space-20">
+							<div class="col-sm-6 col-md-3 isotope-item python">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/wordle3.png" alt="Wordle game screen">
+										<a class="overlay" data-toggle="modal" data-target="#project-1">
+											<i class="fa fa-search-plus"></i>
+											 
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">Wordle</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-1-label">Wordle</h4>
+											</div>
+											<div class="modal-body">
+												
+												<div class="row">												 
+													<div class="col-md-12">
+														<img class="modal_img" width=45% src="images/wordle.png" alt="Wordle game screen">
+														<br/>
+														<h3>Project Description</h3>
+														<p>I started coding Wordle at 2:30 in the morning. After my roommate introduced me to the game, I started thinking about how I’d develop it and I couldn’t stop. In Udemy’s 100 Days of Python course, I had been working with Turtle but had not yet been introduced to tkinter. Therefore my first iteration used Turtle but I needed clickable buttons to represent the keyboard’s keys and so I switched the GUI to tkinter.</p>
+														<p>My version of Wordle uses the <a target="_blank" href="http://www.datamuse.com/api/">Datamuse API</a> to generate and validate words.</p>
+														<p>My <a target="_blank" href="https://github.com/JudythG/Wordle">Wordle repository</a> is stored on GitHub. </p>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+
+							<!-- Timers Project -->
+							<div class="col-sm-6 col-md-3 isotope-item python">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/Timers2.png" alt="Two countdown timers with labels">
+										<a class="overlay" data-toggle="modal" data-target="#project-2">
+											<i class="fa fa-search-plus"></i>
+											 
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Timers</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-2-label">Timers</h4>
+											</div>
+											<div class="modal-body">
+												
+												<div class="row">												 
+													<div class="col-md-12">
+														<img class="modal_img" src="images/Timers2.png" alt="Two countdown timers with labels">
+														<br/>
+														<h3>Project Description</h3>
+														<p>Because I tend to cook for the week, I’m often working from multiple recipes at the same time. The kitchen has two timers, an oven timer that’s difficult to use and a microwave timer. I needed more timers. Programming up this Timers application in Python and tkinter made cooking much easier.</p>
+														<p>In Udemy’s 100 Days of Python course, we had not yet learned how to implement modal dialogs. I developed my code with the help of <a target="_blank" href="https://code-maven.com/slides/python/tk-customized-simple-dialog">Code Maven's custom simple dialog</a> and <a target="_blank" href="https://docs.python.org/3/library/dialog.html">Python's simpledialog documentation</a>.</p>
+														<p>My <a target="_blank" href="https://github.com/JudythG/Timers">Timers repository</a> is on GitHub.</p>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+							
+							<!-- The MET API Project -->
+							<div class="col-sm-6 col-md-3 isotope-item react api">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/theMET.jpg" alt="The MET's 5th Avenue entrance">
+										<a class="overlay" data-toggle="modal" data-target="#project-3">
+											<i class="fa fa-search-plus"></i> 
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Searching The MET API</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-3-label">Searching The MET API</h4>
+											</div>
+											<div class="modal-body">
+												
+												<div class="row">												 
+													<div class="col-md-12">
+														<img class="modal_img" src="images/Moon_search.png" alt="Images of four MET items related to the moon">
+														<br/>
+														<h3>Project Description</h3>
+														<p>My Dad used to take my sister and I to the Metropolitan Museum of Art (The MET). When searching for an API to play with, searching The MET’s collection may have been a nostalgic choice but it was also one that allowed me to practice what I’d learned about developing with React, JSX, Bootstrap, and Axios API calls.</p>
+														<p>The above image is a row of the results from searching on moon.</p>
+														<p>My <a target="_blank" href="https://github.com/JudythG/Art">Searchable MET Collection repository</a> is hosted on GitHub.</p>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+
+							<!-- Stock News Alert project  -->
+							<div class="col-sm-6 col-md-3 isotope-item python api">
+								<div class="image-box">
+									<div class="overlay-container">
+										<img src="images/pexels-anna-nekrashevich-6801874-small.jpg" alt="Person holding a smartphone. Photo by Anna Nekrashevich from Pexels site.">
+										<a class="overlay" data-toggle="modal" data-target="#project-4">
+											<i class="fa fa-search-plus"></i> 
+										</a>
+									</div>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">Stock News Alert</a>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="project-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="project-4-label">Stock News Alert</h4>
+											</div>
+											<div class="modal-body">
+												
+												<div class="row">												 
+													<div class="col-md-12">
+														<img class="modal_img" src="images/pexels-anna-nekrashevich-6801874-small.jpg" alt="Person holding a smartphone. Photo by Anna Nekrashevich from Pexels site.">
+														<br/>
+														<h3>Project Description</h3>
+														<p>This application sends out a text message when Tesla’s closing stock value changes by more than five percent over two consecutive days. This project was developed as a class exercise for Dr. Angela Yu’s 100 Days of Python course. She provided a general description of what the application should do as well as links to Twilio for SMS messaging, the News API for articles related to the stock, and the Alpha Vantage API for stock data.</p>
+														<p>My <a target="_blank" href="https://github.com/JudythG/StockAlerts">Stock News Alert repository</a> is hosted on GitHub. </p>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal end -->
+							</div>
+						</div>
+						<!-- portfolio items end -->
+					
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section end -->
+		
+
+		<!-- footer start --> 
+		<footer id="footer">
+
+			<!-- .footer start --> 
+			<div class="footer section">
+				<div class="container">
+					<h1 class="title text-center" id="contact">Contact</h1>
+					<div class="space"></div>
+					<div class="row">
+						
+						<!-- <div class="col-sm-6">
+							<div class="footer-content">
+								<form role="form" id="footer-form" action="mailto:judythgibson@gmail.com" method="post" enctype="text/plain">
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="sname">Name</label>
+										<input type="text" class="form-control" id="sname" placeholder="Name" name="sname" required>
+										<i class="fa fa-user form-control-feedback"></i>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="email2">Email address</label>
+										<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
+										<i class="fa fa-envelope form-control-feedback"></i>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="message">Message</label>
+										<textarea class="form-control" rows="8" id="message" placeholder="Message" name="message2" required></textarea>
+										<i class="fa fa-pencil form-control-feedback"></i>
+									</div>
+									<input type="submit" value="Send" class="btn btn-default">
+								</form>
+							</div>
+						</div> -->
+						
+						<div class="col-sm">
+							<div class="footer-content">
+								<p>I am open to a new position. </p>
+								<p>While I would prefer to work remotely, I am willing to stay in Pittsburgh or take a job that will move me closer to family in Long Island, New York.</p>
+								<br>
+								
+
+							<div class="widget-content">
+
+								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Maecenas ultrices finibus erat sit amet auctor. Curabitur et metus laoreet, fermentum quam sagittis, cursus augue. </p><br/> -->
+
+								<!-- <p class="contacts"><i class="fa fa-map-marker"></i> 1508 Kembery Drive, Chicago, IL 60605 </p> -->
+
+								<p class="contacts"><i class="fa fa-phone"></i> 412-407-7362</p>
+								<p class="contacts"><i class="fa fa-envelope"></i> judythgibson@gmail.com</p>
+								<p class="contacts"><i class="fa fa-solid fa-file-pdf-o"></i> <a target="_blank" href="https://drive.google.com/file/d/1l70imP2hGTSpiQfaPwPBfzP3kkRUA6xC/view?ths=true">Resume</a></p>
+							
+
+							</div>
+
+						</aside>
+								<ul class="social-links">
+									<!-- <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li> -->
+									<!-- <li class="twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li> -->
+									<!-- <li class="googleplus"><a target="_blank" href="#"><i class="fa fa-google-plus"></i></a></li> -->
+									<!-- <li class="skype"><a target="_blank" href="#"><i class="fa fa-skype"></i></a></li> -->
+									<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/judythgibson/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="github"><a target="_blank" href="https://github.com/JudythG"><i class="fa fa-github"></i></a></li>
+									<li class="medium"><a target="_blank" href="https://medium.com/@judythgibson"><i class="fa fa-medium"></i></a></li>
+									<!-- <li class="youtube"><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>  -->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .footer end -->
+
+			<!-- .subfooter start --> 
+			<div class="subfooter">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="text-center">Copyright © 2015 Template by <a target="_blank" href="http://webthemez.com">webthemez.com</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .subfooter end -->
+
 		</footer>
+		<!-- footer end -->
+
+		<!-- JavaScript --> 
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+
 	</body>
 </html>
